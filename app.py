@@ -25,7 +25,7 @@ plt.rcParams['axes.unicode_minus'] = False
 
 st.set_page_config(page_title="台灣科技政策策略分析儀表板", layout="wide")
 
-df = pd.read_csv('Goriginal.csv')
+DATA_PATH = "Goriginal.csv"
 
 # --------- 欄位同義詞 ---------
 ALIASES = {
