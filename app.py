@@ -8,7 +8,7 @@ import plotly.graph_objects as go
 import matplotlib.pyplot as plt
 from collections import Counter
 import io
-import unicodedata  # ← 新增這行
+import unicodedata  
 
 
 def normalize_issue(x):
@@ -25,8 +25,7 @@ plt.rcParams['axes.unicode_minus'] = False
 
 st.set_page_config(page_title="台灣科技政策策略分析儀表板", layout="wide")
 
-# 固定讀檔路徑
-DATA_PATH = "/Users/debbiechen/Goriginal.csv"
+df = pd.read_csv('Goriginal.csv')
 
 # --------- 欄位同義詞 ---------
 ALIASES = {
